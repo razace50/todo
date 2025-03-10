@@ -1,12 +1,18 @@
+import React from "react";
+import Login from "./components/Auth/Login";
+import SignUp from "./components/Auth/Signup";
+import Dashboard from "./components/dashboard/Dashboard";
+``;
+import { Routes, Route } from "react-router-dom";
 
-function App() {
-
+const App: React.FC = () => {
   return (
-    <>
-     <div  className="text-3xl font-bold underline"
-     >Hello</div>
-    </>
-  )
-}
+    <Routes>
+      <Route path="/" element={<Login />} />
+      <Route path="/signup" element={<SignUp />} />
+      <Route path="/dashboard" element={<Dashboard />} />
+    </Routes>
+  );
+};
 
-export default App
+export default App;
