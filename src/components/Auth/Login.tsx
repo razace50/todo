@@ -75,6 +75,7 @@ const LoginForm: React.FC = () => {
             <button
               type="submit"
               className="w-full bg-blue-500 text-white py-3 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              onClick={handleLogin}
             >
               Log In
             </button>
