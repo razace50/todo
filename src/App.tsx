@@ -8,9 +8,9 @@ import { Routes, Route } from "react-router-dom";
 const App: React.FC = () => {
   return (
     <Routes>
-      <Route path="/dashboard" element={<Login />} />
+      <Route path="/" element={<Login />} />
       <Route path="/signup" element={<SignUp />} />
-      <Route path="/" element={<Dashboard />} />
+      <Route path="/dashboard" element={<Dashboard />} />
     </Routes>
   );
 };
